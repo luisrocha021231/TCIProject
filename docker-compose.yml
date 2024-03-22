@@ -1,16 +1,7 @@
 version: "3.9"
 
 services:
-
-  angular_app:
-    container_name: angular_app
-    image: tcproj-angular_app:1.0.0
-    build: ./webapp/tciprojapp/
-    ports:
-      - 8080:80
-    depends_on:
-      - java_app
-  
+ 
   java_app:
     container_name: java_app
     image: tcproj-java_app:1.0.0
