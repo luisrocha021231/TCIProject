@@ -2,7 +2,17 @@ version: "3.9"
 
 services:
  
-  java_app:
+  java_db:
+    container_name: java_db
+    image: postgres:12
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+   
+   java_app:
     container_name: java_app
     image: tcproj-java_app:1.0.0
     build: .
@@ -14,13 +24,3 @@ services:
       - DATABASE_PASSWORD=postgres
     depends_on:
       - java_db
-
-  java_db:
-    container_name: java_db
-    image: postgres:12
-    ports:
-      - 5432:5432
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: postgres
