@@ -1,0 +1,10 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+body {
+background-color: #131314;
+color: white;
+background-image: url('../src/assets/fondod.jpg');
+background-size: cover; 
+background-position: center;
+animation: appear 4s forwards;
+}

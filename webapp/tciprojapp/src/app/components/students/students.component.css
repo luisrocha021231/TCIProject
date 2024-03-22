@@ -1,0 +1,166 @@
+.encabezado {
+    background: linear-gradient(to right, #4d83f0, #d96570);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal; 
+}
+
+.idversion {
+  background: linear-gradient(to right, #d96570, #4d83f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal; 
+}
+
+th {
+    background: linear-gradient(to right, #4d83f0, #d96570);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: normal; 
+}
+
+td {
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    vertical-align: middle;
+}
+
+.btn {
+    background: linear-gradient(to right, #1e1f20, #1e1f20);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    border-radius: 20px;
+  }
+  
+  .btn:hover {
+    background: linear-gradient(to right, #4d83f0, #d96570);
+  }
+  
+  .btn:focus {
+    background: linear-gradient(to right, #4d83f0, #d96570); 
+  }
+  
+  .btn:active {
+    animation: clickAnimation 0.1s linear;
+  }
+  
+  @keyframes clickAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.95); }
+    100% { transform: scale(1); }
+  }
+
+  .table {
+    border-collapse: collapse; 
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden; 
+    border: none;
+  }
+
+  th, td {
+    border: none;
+    padding: 8px; 
+  }
+
+  tr:nth-child(even) {
+    background-color: #333537;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #303131;
+  }
+
+  .divcredits {
+    position:fixed;
+    top: 0;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+       
+    
+}
+
+.credits {
+  background: linear-gradient(to right, #4d83f0, #d96570);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal; 
+    
+}
+
+ .btndoc {
+  background: linear-gradient(to right, #4d83f0, #d96570);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  border-radius: 20px;
+}
+
+.btndoc:hover {
+  background: linear-gradient(to right, #1e1f20, #1e1f20);
+}
+
+.btndoc:focus {
+  background: linear-gradient(to right, #1e1f20, #1e1f20); 
+}
+
+.btndoc:active {
+  animation: clickAnimation 0.1s linear;
+}
+
+.search {
+  background:#1e1f20;
+  color: white;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  position: relative;
+  z-index: 2;
+  border: none; 
+  outline: none;
+  
+}
+
+.searchcontenedor {
+  position: relative;
+  overflow: hidden;
+}

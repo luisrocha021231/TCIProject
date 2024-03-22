@@ -1,0 +1,118 @@
+.divcredits {
+    position:fixed;
+    top: 0;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);  
+}
+
+.credits {
+  background: linear-gradient(to right, #4d83f0, #d96570);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal; 
+    
+}
+
+.primertext {
+    background: linear-gradient(to right, #4d83f0, #d96570);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    align-items: center; 
+}
+
+.formstyles {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #303131;
+}
+
+.formstyles label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .formstyles textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #303131;
+    border-radius: 10px;
+  }
+
+  .btn {
+    background: linear-gradient(to right, #1e1f20, #1e1f20);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    border-radius: 20px;
+  }
+  
+  .btn:hover {
+    background: linear-gradient(to right, #4d83f0, #d96570);
+  }
+  
+  .btn:focus {
+    background: linear-gradient(to right, #4d83f0, #d96570); 
+  }
+  
+  .btn:active {
+    animation: clickAnimation 0.1s linear;
+  }
+  
+  @keyframes clickAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.95); }
+    100% { transform: scale(1); }
+  }
+
+  input {
+    background:#1e1f20;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    
+  }
+
+  select {
+    background:#1e1f20;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  label {
+    background: linear-gradient(to right, #4d83f0, #d96570); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  

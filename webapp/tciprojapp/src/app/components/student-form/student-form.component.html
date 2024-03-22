@@ -1,0 +1,63 @@
+<div class="divcredits">
+    <label class="credits">¡¡¡ Diseñada por nosotros con mucho &#x2764; &#x2764; &#x2764;  for all of you &#x2764; &#x2764; !!!
+    </label>
+</div>
+
+<div class="mb-5">
+
+</div>
+
+<div class="row row-cols-3 justify-content-center" >
+    @if(form){
+        <form class="formstyles" [formGroup]="form" (ngSubmit)="saveStudent()">
+
+            <div class="primertext mb-3">
+                @if(student){
+                    Editar
+                } @else{
+                    Nuevo
+                } Estudiante
+            </div>
+            
+            <div class="mb-3">
+                <label for="name">Nombre</label>
+                <input id="name" type="text" class="form-control"
+                formControlName="name" required>
+            </div>
+        
+            <div class="mb-3">
+                <label for="lastname">Apellido</label>
+                <input id="lastname" type="text" class="form-control"
+                formControlName="lastname" required>
+            </div>
+        
+            <div class="mb-3">
+                <label for="birthdate">Fecha de Nacimiento</label>
+                <input id="birthdate" type="date"  class="form-control"
+                formControlName="birthdate" required>
+            </div>
+        
+            <div class="mb-3">
+                <label for="status">Estado Academico</label>
+                <select id="status" class="form-control"
+                formControlName="status">
+                    <option value="Activo">Activo</option>
+                    <option value="Inactivo">Inactivo</option>
+                </select>
+            </div>
+        
+            <div class="text-end">
+                <button type="button" class="btn btn-light" routerLink="/">
+                    Cancelar
+                </button>
+                <button class="btn btn-primary ms-3">
+                    @if(student){
+                        Actualizar
+                    } @else{
+                        Crear Estudiante
+                    } 
+                </button>
+            </div>
+        </form>
+    }
+</div>

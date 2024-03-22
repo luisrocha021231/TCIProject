@@ -1,0 +1,63 @@
+<div class="divcredits">
+    <label class="credits">¡¡¡ Diseñada por nosotros con mucho &#x2764; &#x2764; &#x2764;  for all of you &#x2764; &#x2764; !!!
+    </label>
+</div>
+
+<div class="d-flex justify-content-center align-items-center mb-4" >
+    <h1 class="encabezado d-inline ">ESTUDIANTES </h1> 
+    <label class="idversion ms-2 ">(v1.0)</label>
+    <button class="btndoc d-inline ms-5" >API Documentaci&oacute;n</button>
+</div>
+
+<div class="text-end mb-5 "> 
+    <div class="btn-group">
+        <input class="search" type="text" placeholder="Ingresa el nombre">
+        <button class="btn">Buscar</button>
+    </div>
+                
+<button type="button" class="btn ms-5" (click)="deleteStudents()">
+        Borrar Estudiantes
+</button>
+
+<button class="btn btn-primary ms-3 " routerLink="/new">
+    Nuevo Estudiante
+</button>
+</div>
+
+<table class="table table-hover">
+    <thead>
+        <tr class="text-center">
+            <!--<th>ID</th> --> 
+            <th>NOMBRE</th>
+            <th>APELLIDO</th>
+            <th>FECHA DE NACIMIENTO</th>
+            <th>EDAD</th>
+            <th>ESTADO ACADEMICO</th>
+            <th>OPCIONES</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+     @for(student of students; track student.id) {
+        <tr>
+           <!--<td class="text-center">{{student.id}}</td>--> 
+            <td class="text-center">{{student.name}}</td>
+            <td class="text-center">{{student.lastname}}</td>
+            <td class="text-center">{{student.birthdate}}</td>
+            <!--<td>{{student.birthdate | date: 'dd/MM/yyyy hh:mm a'}}</td>-->
+            <td class="text-center">{{student.age}}</td>
+            <td class="text-center">{{student.status}}</td>
+            <td class="text-end">
+                <div class="btn-group">
+                    <button class="btn btn-primary" [routerLink]="[student.id+'/edit']">
+                        Editar
+                    </button>
+                    <button class="btn btn-danger " (click)="deleteStudent(student)">
+                        Eliminar
+                    </button>
+                </div>
+            </td>
+        </tr> 
+            }
+    </tbody>
+</table>
